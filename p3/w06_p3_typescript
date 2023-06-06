@@ -1,0 +1,98 @@
+Script started on 2023-03-07 18:06:12-06:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+[?2004h[mohammud@vm-instunix-11] (1)$ cd ~/private/cs354
+[?2004l[?2004h[mohammud@vm-instunix-11] (2)$ cp -r /p/course/cs354-deppeler/public/code/p3
+[?2004lcp: missing destination file operand after '/p/course/cs354-deppeler/public/code/p3'
+Try 'cp --help' for more information.
+[?2004h[mohammud@vm-instunix-11] (3)$ ls
+[?2004l[0m[01;34mactivities[0m/  [01;34mp1[0m/  [01;34mp2[0m/  [01;34mp2B[0m/  [01;34mp3[0m/
+[?2004h[mohammud@vm-instunix-11] (4)$ [7mcp -r /p/course/cs354-deppeler/public/code/p3 [27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp -r /p/course/cs354-deppeler/public/code/p3 
+[?2004lcp: missing destination file operand after '/p/course/cs354-deppeler/public/code/p3'
+Try 'cp --help' for more information.
+[?2004h[mohammud@vm-instunix-11] (5)$ c [Kd p3
+[?2004l[?2004h[mohammud@vm-instunix-11] (6)$ ls
+[?2004lMakefile  p3Heap.c  p3Heap.h  README  [0m[01;34mtests[0m/  typescript
+[?2004h[mohammud@vm-instunix-11] (7)$ make
+[?2004lgcc -g -c -Wall -m32 -fpic p3Heap.c
+[01m[Kp3Heap.c:[m[K In function ‘[01m[Kcoalesce[m[K’:
+[01m[Kp3Heap.c:162:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kblockheader[m[K’; did you mean ‘[01m[KblockHeader[m[K’?
+  162 |         [01;31m[Kblockheader[m[K* c = heap_start;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[KblockHeader[m[K
+[01m[Kp3Heap.c:162:26:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[KblockHeader *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  162 |         blockheader* c = [01;35m[Kheap_start[m[K;
+      |                          [01;35m[K^~~~~~~~~~[m[K
+[01m[Kp3Heap.c:166:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize_status[m[K’ in something not a structure or union
+  166 |         while (c [01;31m[K->[m[K size_status != 1) {
+      |                  [01;31m[K^~[m[K
+[01m[Kp3Heap.c:332:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+  332 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[Kp3Heap.c:163:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  163 |         int [01;35m[Knum[m[K = 0;
+      |             [01;35m[K^~~[m[K
+[01m[Kp3Heap.c:338:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+At top level:
+[01m[Kp3Heap.c:263:6:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdisp_heap[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+  263 | void [01;35m[Kdisp_heap[m[K() {
+      |      [01;35m[K^~~~~~~~~[m[K
+[01m[Kp3Heap.c:179:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kinit_heap[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+  179 | int [01;35m[Kinit_heap[m[K(int sizeOfRegion) {
+      |     [01;35m[K^~~~~~~~~[m[K
+make: *** [Makefile:5: p3Heap] Error 1
+[?2004h[mohammud@vm-instunix-11] (8)$ [7mcd ~/private/cs354/p3[27mcd ~/private/cs354/p3
+[?2004l[?2004h[mohammud@vm-instunix-11] (9)$ make
+[?2004lgcc -g -c -Wall -m32 -fpic p3Heap.c
+[01m[Kp3Heap.c:[m[K In function ‘[01m[Kcoalesce[m[K’:
+[01m[Kp3Heap.c:162:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kblockheader[m[K’; did you mean ‘[01m[KblockHeader[m[K’?
+  162 |         [01;31m[Kblockheader[m[K* c = heap_start;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[KblockHeader[m[K
+[01m[Kp3Heap.c:162:26:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[KblockHeader *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  162 |         blockheader* c = [01;35m[Kheap_start[m[K;
+      |                          [01;35m[K^~~~~~~~~~[m[K
+[01m[Kp3Heap.c:166:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize_status[m[K’ in something not a structure or union
+  166 |         while (c [01;31m[K->[m[K size_status != 1) {
+      |                  [01;31m[K^~[m[K
+[01m[Kp3Heap.c:332:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+  332 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[Kp3Heap.c:163:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  163 |         int [01;35m[Knum[m[K = 0;
+      |             [01;35m[K^~~[m[K
+[01m[Kp3Heap.c:338:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+At top level:
+[01m[Kp3Heap.c:263:6:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdisp_heap[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+  263 | void [01;35m[Kdisp_heap[m[K() {
+      |      [01;35m[K^~~~~~~~~[m[K
+[01m[Kp3Heap.c:179:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kinit_heap[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+  179 | int [01;35m[Kinit_heap[m[K(int sizeOfRegion) {
+      |     [01;35m[K^~~~~~~~~[m[K
+make: *** [Makefile:5: p3Heap] Error 1
+[?2004h[mohammud@vm-instunix-11] (10)$ ls
+[?2004lMakefile  p3Heap.c  p3Heap.h  README  [0m[01;34mtests[0m/  typescript
+[?2004h[mohammud@vm-instunix-11] (11)$ cd t[K[K[K[K[7mcd tests[27mcd tests
+[?2004l[?2004h[mohammud@vm-instunix-11] (12)$ make
+[?2004lgcc -I.. -g -m32 -Xlinker -rpath=.. -o mytest mytest.c -L.. -lheap -std=gnu99
+/usr/bin/ld: cannot find -lheap: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:8: mytest] Error 1
+[?2004h[mohammud@vm-instunix-11] (13)$ ./myteas[K[Ksr[Kt
+[?2004lbash: ./mytest: No such file or directory
+[?2004h[mohammud@vm-instunix-11] (14)$ [7mcat test_align1.c[27mcat test_align1.c
+[?2004l// first pointer returned is 8-byte aligned
+#include <assert.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include "p3Heap.h"
+
+int main() {
+   assert(init_heap(4096) == 0);
+   int* ptr = (int*) balloc(sizeof(int));
+   assert(ptr != NULL);
+   assert(((int)ptr) % 8 == 0);
+   exit(0);
+}
+[?2004h[mohammud@vm-instunix-11] (15)$ exit
+[?2004lexit
+
+Script done on 2023-03-07 18:09:18-06:00 [COMMAND_EXIT_CODE="0"]
